@@ -231,7 +231,8 @@ void CompareLow(int j, int N, int mpi_rank, uint32_t my_array[]) {
     qsort( my_array, N, sizeof(uint32_t), ComparisonFunc );
 
     free(buffer_send);
-    free(buffer_recieve);
+    free(buffer_recieve); 
+    return;
 }
 
 
@@ -339,4 +340,5 @@ void CompareHigh(int j, int N, int mpi_rank, uint32_t my_array[]) {
 	
     free( buffer_send );
     free( buffer_recieve );
+    return;
 }
