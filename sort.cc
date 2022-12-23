@@ -116,15 +116,13 @@ int main(int argc, char * argv[]) {
 
       //printf("Displaying sorted array (only 10 elements for quick verification), My rank is %d\n", process_rank);
 
-
-    //  for (i = 0; i < array_size; i++) {
-      //   if (i == 0 || i==array_size-1) {
-        //      printf("My rank is %d, no is %d\n",process_rank, array[i]);
-		//for(j=0;j<=process_rank;j++)
-		//	printf(".");
-          //  }
-     // }
-       // printf("\n\n");
+    for (i = 0; i < N; i++) {
+        printf("My rank is %d, no is %d\n",process_rank, array[i]);
+    	for(j = 0; j <= process_rank; j++)
+    		printf(".");
+           }
+     }
+    printf("\n\n");
 
     free(my_array);
 
